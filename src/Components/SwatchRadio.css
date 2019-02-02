@@ -1,0 +1,55 @@
+.swatch-radio {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.swatch-radio-mr {
+    margin-right: .3em;
+}
+
+.swatch-radio-item {
+    position: relative;
+    padding: .2em;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.swatch-radio-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.swatch-radio-label {
+    display: block;
+  
+    height: 1em;
+    width: 1em;
+    line-height: .95em;
+    font-size: .9em;
+    
+    background-color: #CCC;
+}
+
+.swatch-radio-indicator {
+    display: block;
+    visibility: hidden;
+
+    line-height: 1em;
+    font-size: .5em;
+}
+
+.swatch-radio-item .swatch-radio-input:checked ~ .swatch-radio-indicator {
+    visibility: visible;
+}
+
+.swatch-radio-item .swatch-radio-input:focus + .swatch-radio-label {
+    outline-color: rgb(77, 144, 254);
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.swatch-radio-item:hover .swatch-radio-label {
+    background-color: #999;
+}
